@@ -1,0 +1,54 @@
+<resources>
+
+
+    <string name="app_name">project4</string>
+    <string name="g1">Female</string>
+    <string name="g2">Male</string>
+    <string name="gender">Gender:</string>
+    <string name="email">Enter Email:</string>
+    <string name="name">Enter Name:</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="age">Age:</string>
+    <string name="pass">Password:</string>
+    <string name="pass2">Retype Password:</string>
+    <string name="sign_b">Sign up</string>
+    <string name="member">Already have an Account?</string>
+    <string name="admin">Admin mode</string>
+    <string name="user">User mode</string>
+    <string name="records">RECORDS</string>
+    <string name="users_records">USERS RECORDS</string>
+    <string name="u_log_in">LOG IN</string>
+    <string name="u_email">Email</string>
+    <string name="u_password">Password</string>
+    <string name="log_in_b">LOG in</string>
+    <string name="greetings">GREETINGS</string>
+    <string name="number">NUMBERS</string>
+    <string name="family">Family</string>
+    <string name="occassions">OCCASSIONS</string>
+    <string name="food">FOOD</string>
+    <string name="a_email">Email</string>
+    <string name="a_password">Password</string>
+    <string name="a_sign_in">SIGN IN</string>
+    <string name="option_insert">Insert new records</string>
+    <string name="option_view_R">View Records</string>
+    <string name="option_view_U">View Users</string>
+    <string name="a_insertion">Inserting data</string>
+    <string name="a_category">Enter Category</string>
+    <string name="a_T_word">Turkish word</string>
+    <string name="a_E_word">English word</string>
+    <string name="a_Tsen">Turkish sentence</string>
+    <string name="a_Esen">English Sentence</string>
+    <string name="a_pic">image name</string>
+    <string name="a_insert_b">insert data</string>
+    <string name="a_back">back</string>
+
+
+    <string-array name="category">
+        <item>Greetings</item>
+        <item>Numbers</item>
+        <item>Family</item>
+        <item>Occassions</item>
+        <item>Basic Words</item>
+        <item>Food</item>
+    </string-array>
+</resources>

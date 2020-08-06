@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".adminOptions"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/admin" />
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/option_insert"
+        android:textSize="28sp"
+        android:id="@+id/greeting"  android:background="@drawable/btn_bg"
+
+        android:onClick="insertData"
+        />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/option_view_R"
+        android:textSize="28sp"
+        android:id="@+id/sports"
+        android:background="@drawable/btn_bg"
+        android:onClick="viewInfo"
+
+        />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/option_view_U"
+        android:textSize="28sp"
+        android:id="@+id/family"
+        android:background="@drawable/btn_bg"
+        android:onClick="viewUsers"
+        />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="view Ratings"
+        android:textSize="28sp"
+        android:id="@+id/rate"
+        android:background="@drawable/btn_bg"
+        android:onClick="viewRating"
+        />
+
+</LinearLayout>

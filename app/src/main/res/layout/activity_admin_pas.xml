@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminPas"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="399dp"
+        android:layout_height="289dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_foreground" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:hint="   EMAIL"
+            android:layout_margin="10dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/email"
+            android:background="@drawable/et_bg"
+            android:id="@+id/em"
+
+
+            />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/password"
+            android:background="@drawable/et_bg"
+            android:padding="10dp"
+            android:hint="   PASSWORD"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/a_sign_in"
+            android:id="@+id/subm"
+
+            android:onClick="signin"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/aa"
+            android:onClick="reLoad"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

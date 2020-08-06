@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help"
+    android:orientation="vertical">
+    <TextView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        android:text="   HELP"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/help"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR GOAL"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/pointer"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK ON TEST YOURSELF TO CHECK YOUR VOCABULARY"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/pointer"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK ON LEARN FROM SCRATH TO VIEW CATEGORIES "
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT THE CATEGORY YOU WANT TO LEARN"
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK ON THE WORD TO LEARN ABOUT IT"
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONT FORGET TO RATE OUR APP!!"
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>

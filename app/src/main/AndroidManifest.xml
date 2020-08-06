@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".viewRatingTable"></activity>
+        <activity
+            android:name=".adminPas"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".words"
+            android:parentActivityName=".categories" />
+        <activity
+            android:name=".viewUsersTable"
+            android:parentActivityName=".adminOptions" />
+        <activity
+            android:name=".viewLearningTable"
+            android:parentActivityName=".adminOptions" />
+        <activity
+            android:name=".user"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".reason"
+            android:parentActivityName=".user" />
+        <activity
+            android:name=".quiz8"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz7"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz6"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz5"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz4"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".quiz1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".path"
+            android:parentActivityName=".login" />
+        <activity
+            android:name=".login"
+            android:parentActivityName=".user" />
+        <activity
+            android:name=".Information"
+            android:parentActivityName=".categories" />
+        <activity
+            android:name=".help"
+            android:parentActivityName=".categories" />
+        <activity
+            android:name=".goal"
+            android:parentActivityName=".reason" />
+        <activity
+            android:name=".feedBack"
+            android:parentActivityName=".categories" />
+        <activity
+            android:name=".categories"
+            android:parentActivityName=".path" />
+        <activity
+            android:name=".adminOptions"
+            android:parentActivityName=".adminPas" />
+        <activity
+            android:name=".admin"
+            android:parentActivityName=".adminOptions" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="6dp"
+    android:scrollbars="vertical"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/bg_login"
+    android:alignmentMode="alignMargins"
+    android:layout_rowSpan="3"
+    android:layout_columnSpan="2"
+    android:columnOrderPreserved="false"
+    tools:context=".categories"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <Button
+    android:padding="10dp"
+        android:id="@+id/greeting"
+        android:layout_marginTop="40dp"
+
+
+        android:layout_width="166dp"
+        android:layout_height="143dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="@drawable/et_bg"
+        android:drawableTop="@drawable/greetings2"
+        android:onClick="greet"
+        android:text="@string/greetings"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="40dp"
+        android:id="@+id/number"
+        android:layout_width="166dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_row="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        android:layout_column="1"
+        android:drawableTop="@drawable/numbers"
+        android:onClick="num"
+        android:text="@string/number"
+
+
+        />
+
+    <Button
+        android:padding="10dp"
+        android:id="@+id/family"
+        android:layout_marginTop="20dp"
+        android:layout_width="166dp"
+        android:layout_height="151dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:background="@drawable/et_bg"
+        android:drawableTop="@drawable/familymembers"
+        android:onClick="fam"
+        android:text="@string/family"
+        android:textColor="@color/black"
+        android:textSize="20sp"  />
+
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:id="@+id/occassions"
+        android:layout_marginTop="20dp"
+        android:layout_width="166dp"
+        android:layout_height="143dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        android:drawableTop="@drawable/occasions"
+        android:onClick="oca"
+        android:text="@string/occassions" />
+
+    <Button
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg"
+        android:id="@+id/food"
+        android:layout_width="166dp"
+        android:layout_height="143dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        android:layout_row="3"
+        android:layout_column="0"
+        android:drawableTop="@drawable/food"
+        android:onClick="food"
+        android:text="@string/food"
+
+        />
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_width="166dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="143dp"
+
+        android:drawableTop="@drawable/phrases"
+
+        android:layout_row="3"
+        android:layout_column="1"
+        android:text="Basic Words"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:id="@+id/bWord"
+
+        android:onClick="bWord"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:paddingBottom="24dp" />
+
+    </RelativeLayout>
+
+</GridLayout>

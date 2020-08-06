@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_login"
+    android:layout_height="match_parent"
+    tools:context=".user"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_gravity="top|center"
+        android:layout_margin="4dp"
+        android:background="@drawable/et_bg"
+        android:drawableLeft="@drawable/name"
+        android:hint="   NAME"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_margin="4dp"
+        android:background="@drawable/et_bg"
+        android:drawableLeft="@drawable/email"
+        android:hint="   EMAIL ADDRESS"
+
+
+        android:padding="10dp"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_gravity="top|center"
+        android:text="@string/gender"
+        android:id="@+id/g"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RadioG"
+        android:layout_gravity="top|center"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g2"
+            android:drawableLeft="@drawable/male"
+            android:textSize="22sp"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/g1"
+            android:drawableLeft="@drawable/female"
+            android:textSize="22sp" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/age"
+        android:hint="@string/age"
+        android:layout_gravity="top|center"
+        android:background="@drawable/et_bg"
+        android:layout_margin="4dp"
+        android:inputType="number"
+        android:id="@+id/age"
+        />
+
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_margin="4dp"
+        android:layout_gravity="top|center"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/a_password"
+        android:inputType="textPassword"
+        android:id="@+id/pas1"
+        />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_gravity="top|center"
+        android:drawableLeft="@drawable/password"
+
+        android:layout_margin="4dp"
+        android:inputType="textPassword"
+        android:hint="@string/a_password"
+        android:id="@+id/pas2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_b"
+        android:onClick="signUP"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/member"
+        android:textStyle="bold"
+        android:textColor="@color/lightblue"
+        android:onClick="login"
+        android:textSize="22sp"
+        android:autoLink="all"
+        >
+    </TextView>
+
+
+</LinearLayout>

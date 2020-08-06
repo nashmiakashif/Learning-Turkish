@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedBack"
+    android:background="@drawable/bg_login"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:stepSize="1"
+        android:layout_margin="6dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="rate"
+        android:onClick="rated"
+        android:id="@+id/b"
+        android:layout_below="@+id/ratingBar"
+        />
+
+    <TextView
+        android:layout_width="363dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/b"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/clickhere"
+        android:onClick="implIntent"
+        android:text="WANT TO LEARN OTHER LANGUAGES?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:paddingBottom="24dp" />
+</RelativeLayout>

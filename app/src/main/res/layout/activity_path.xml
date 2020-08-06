@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".path"
+    android:orientation="vertical"
+
+    >
+    <ImageView
+        android:layout_width="301dp"
+        android:layout_height="201dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_foreground" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE A PATH"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:id="@+id/t1"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:background="@color/yellow"
+        android:padding="12dp"
+        android:layout_margin="20dp"
+        android:rowCount="4"
+        android:layout_below="@+id/t1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Learning Turkish for the first time?"
+            android:textSize="28dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/arrow3"
+            android:text="Start from scratch"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="decide2"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already know some Turkish?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/t3"
+            android:onClick="decide2"
+            android:textSize="28dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow3"
+            android:text="Check your level here"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:onClick="decide1"
+            android:textSize="28dp"
+
+            />
+    </GridLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+
+</LinearLayout>

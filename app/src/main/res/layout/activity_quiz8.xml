@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz8"
+    android:background="@drawable/bg_login"
+
+    android:padding="40dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_marginTop="12dp"
+        android:id="@+id/im"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="TRANSLATE"
+        android:layout_below="@id/im"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/t1"
+        android:layout_alignLeft="@id/t2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-62dp"
+        android:id="@+id/aud"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/aud"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child"
+        android:id="@+id/t2"
+        android:layout_below="@+id/t1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:textFontWeight="2"
+        android:id="@+id/t3"
+        android:layout_below="@id/t2"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/t3"
+        android:id="@+id/t4"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yer"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:drawableLeft="@drawable/pointer"
+            android:id="@+id/w1"
+            android:onClick="check1"
+            android:layout_margin="7dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="bir"
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="25dp"
+            android:id="@+id/w2"
+            android:onClick="check2"
+            android:layout_margin="7dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çocuk"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/pointer"
+            android:textSize="25dp"
+            android:layout_margin="7dp"
+            android:id="@+id/w3"
+            android:onClick="check3"
+            />
+    </GridLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t4"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_bg"
+        android:layout_alignRight="@id/t4"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="-190dp"
+        android:onClick="path"
+        android:text="Back to path" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:text="Check"
+        android:id="@+id/ch"
+        android:onClick="check"
+        />
+
+</RelativeLayout>

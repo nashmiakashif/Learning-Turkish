@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".admin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_insertion"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/a_category"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="180dp"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+
+            android:id="@+id/cat" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/a_T_word"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:id="@+id/T_word"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/a_E_word"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:id="@+id/E_word"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/a_Tsen"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:id="@+id/T_sen"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="@string/a_Esen"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:id="@+id/E_sen"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="@string/a_pic"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/et_bg"
+            android:layout_margin="6dp"
+            android:textSize="18dp"
+            android:id="@+id/pic"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="6dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/et_bg"
+        android:text="@string/a_insert_b"
+        android:onClick="insert"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="6dp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/et_bg"
+        android:text="@string/a_back"
+        android:onClick="back"
+        />
+
+
+</LinearLayout>
